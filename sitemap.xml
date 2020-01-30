@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/naisonpontes-website-gh-pages/about</loc>
+<loc>/naisonpontes-website/naisonpontes-website/about</loc>
 </url>
 <url>
-<loc>/naisonpontes-website-gh-pages/contact</loc>
+<loc>/naisonpontes-website/naisonpontes-website/contact</loc>
 </url>
 <url>
-<loc>/naisonpontes-website-gh-pages/</loc>
+<loc>/naisonpontes-website/naisonpontes-website/</loc>
 </url>
 <url>
-<loc>/naisonpontes-website-gh-pages/project</loc>
+<loc>/naisonpontes-website/naisonpontes-website/project</loc>
 </url>
 </urlset>
