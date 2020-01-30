@@ -1,8 +1,8 @@
-<script src="assets/js/simple-anime.js"></script>
+<script src="{{ '/assets/js/simple-anime.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 {% if page.url == '/' %}
-  <script src="assets/js/canvas.js"></script>
+  <script src="{{ '/assets/js/canvas.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 {% endif %}
 {% if page.url == '/about' %}
-  <script src="assets/vendor/easy-pie-chart/js/easypiechart.min.js"></script>
+  <script src="{{ '/assets/vendor/easy-pie-chart/js/easypiechart.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 {% endif %}
-<script src="assets/js/script.js"></script>
+<script src="{{ '/assets/js/script.js' | prepend: site.baseurl | prepend: site.url }}"></script>

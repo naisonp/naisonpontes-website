@@ -1,9 +1,11 @@
 title:         Naison Pontes
 description:   "Site oficial de Naison Pontes, criado com jekyll, html e css."
-baseurl:       ""
-url:           ""
+baseurl:       "/naisonpontes-website"
+url:           "/naisonpontes-website"
 
 destination: public
+port: 4000
+host: localhost
 
 markdown:      kramdown
 

@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Site de apresentação",
   "main": "index.js",
+  "homepage": "https://naisonp.github.io/naisonpontes-website/",
   "scripts": {
     "postinstall": "gulp postinstall",
     "build": "gulp postinstall; JEKYLL_ENV=production bundle exec jekyll build; gulp minify;",
+    "deploy": "JEKYLL_ENV=production bundle exec jekyll build; ./node_modules/.bin/gh-pages -d public",
     "start": "bundle exec jekyll server"
   },
   "author": "Naison Pontes",
@@ -14,6 +16,7 @@
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "event-stream": "^4.0.1",
+    "gh-pages": "^2.2.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
