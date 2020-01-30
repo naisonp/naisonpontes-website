@@ -1,0 +1,66 @@
+.bg-contact {
+  background: url("../images/contact.jpg") no-repeat center;
+  background-size: cover;
+  height: 350px;
+
+  @include device(mobile) {
+    height: 200px;
+  }
+}
+
+.section-contact {
+  .call {
+    padding: 30px 0;
+    text-align: center;
+
+    h1 {
+      @include type-primary(56, 65);
+      font-weight: bold;
+
+      @include device(mobile) {
+        @include type-primary(38, 57);
+      }
+    }
+
+    p {
+      @include type-primary(18);
+      font-weight: 500;
+
+      @include device(mobile) {
+        text-align: center;
+      }
+    }
+  }
+
+  .list-service {
+    margin-left: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    @include device(mobile) {
+      margin-left: 0;
+    }
+  }
+
+  .list-service {
+    li {
+      margin-bottom: 15px;
+
+      i {
+        color: $theme-color-third;
+        margin-right: 5px;
+      }
+    }
+
+    @include device(mobile) {
+      margin-left: 0;
+    }
+  }
+
+  .social {
+    @include device(mobile) {
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+}

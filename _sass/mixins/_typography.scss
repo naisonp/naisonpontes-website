@@ -1,0 +1,26 @@
+@mixin type-primary($font-size, $line-size: 30) {
+  // font-family: $font-family-default;
+
+  // @if $font-size==18 {
+  //   font-size: em(18);
+  //   line-height: em($line-size, 18);
+  // }
+
+  font-size: em($font-size);
+  line-height: em($line-size, $font-size);
+}
+
+@mixin type-secondary($font-size, $line-size: 30) {
+  font-family: $font-family-serif;
+  font-size: em($font-size);
+  line-height: em($line-size, $font-size);
+  // @if $font-size==18 {
+  //   font-size: em(18);
+  //   line-height: em($line-size, 18);
+  // }
+
+  // @if $font-size==24 {
+  //   font-size: em(24);
+  //   line-height: em($line-size, 24);
+  // }
+}

@@ -1,0 +1,12 @@
+@mixin grid-structure {
+	float: left;
+	min-height: 1px;
+	margin-left: $grid-gutter-width / 2;
+	margin-right: $grid-gutter-width / 2;
+	@include device(mobile) {
+		width: 100%;
+		float: none;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}

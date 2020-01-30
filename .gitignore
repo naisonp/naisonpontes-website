@@ -1,0 +1,14 @@
+.DS_Store
+
+/vendor/
+/assets/vendor/
+/node_modules/
+/_site/
+/public/
+/temp/
+/.sass-cache/
+/.jekyll-cache/
+/.jekyll-metadata/
+**/*.bak
+**/*.lock
+**/*.log

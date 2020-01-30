@@ -1,0 +1,26 @@
+  <aside class="sidebar-wrapper">
+    <button id="toggleSidebar" class="sidebar-btn"><i class="fas fa-bars"></i></button>
+    <div class="content-side">
+      <div class="perfil">
+        <img src="assets/images/perfil.jpg" alt="Naison Pontes">
+        <h2 class="name">Naison Pontes</h2>
+        <ul class="social">
+          <li><a href="#" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <li><a href="#" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#" class="github"><i class="fab fa-github-alt" aria-hidden="true"></i></a></li>
+          <li><a href="#" class="skype"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <nav class="lista-menu">
+        <ul>
+          {% for item in site.data.navigation %}
+            <li {% if page.url == item.link %}class="active" {% endif %}>
+              <a href="{{ item.link }}" {% if page.url != item.link %}class="{{ item.class }}" {% endif %}><i
+                  class="{{ item.icon }}"></i><span>{{ item.name }}</span></a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </aside>

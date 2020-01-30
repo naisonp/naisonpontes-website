@@ -1,0 +1,10 @@
+@mixin row {
+	position: relative;
+	margin-left: -$grid-gutter-width/2;
+	margin-right: -$grid-gutter-width/2;
+	@include device(mobile) {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	@include clearfix;
+}

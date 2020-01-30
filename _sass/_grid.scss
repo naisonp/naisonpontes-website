@@ -1,0 +1,37 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+// generate grid classes
+@for $i from 1 through $grid-columns {
+  .grid-#{$i} {
+		width: grid($i);
+	}
+}
+
+[class^="grid-"] {
+	@include grid-structure;
+}
+
+// generate offset classes 
+
+@for $i from 1 through $grid-columns {
+	.offset-#{$i} {
+		margin-left: grid($i, offset);
+		@extend %offset;
+	}
+}
+
+@include device(mobile) {
+	%offset {
+		margin-left: 0px;
+	}
+}
+
+.container {
+	@include container;
+}
+
+.row {
+  @include row;
+}

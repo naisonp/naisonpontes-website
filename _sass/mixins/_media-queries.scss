@@ -1,0 +1,18 @@
+//media queries
+@mixin device($type) {
+	@if $type == base {
+		@media screen and (min-width: #{$container-device-base}) {
+			@content;
+		}
+	}
+	@else if $type == tablet {
+		@media screen and (min-width: #{$container-device-tablet}) and (max-width: $container-device-base - 1) {
+			@content;
+		}
+	}
+	@else if $type == mobile {
+		@media screen and (max-width: $container-device-tablet - 1) {
+			@content;
+		}
+	}
+}

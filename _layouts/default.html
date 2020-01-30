@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  {% include head.html %}
+
+<body>
+
+  {% include sidebar.html %}
+
+  {{ content }}
+
+  {% if page.footer == true %}
+    {% include footer.html %}
+  {% endif %}
+
+  {% include scripts.html %}
+  
+</body>
+
+</html>

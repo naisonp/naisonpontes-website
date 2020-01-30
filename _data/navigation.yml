@@ -1,0 +1,19 @@
+- name: Início
+  link: /
+  icon: fas fa-home
+  class: home
+
+- name: Sobre
+  link: /about
+  icon: fas fa-child
+  class: about
+
+- name: Projetos
+  link: /project
+  icon: fas fa-code
+  class: project
+
+- name: Contato
+  link: /contact
+  icon: fas fa-paper-plane
+  class: contact

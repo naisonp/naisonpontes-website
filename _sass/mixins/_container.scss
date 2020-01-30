@@ -1,0 +1,14 @@
+@mixin container {
+	max-width: $container-device-base;
+	margin: 0px auto;
+	position: relative;
+	@include device(tablet) {
+		max-width: $container-device-tablet;
+	}
+	@include device(mobile) {
+		max-width: $container-device-mobile;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	@include clearfix;
+}

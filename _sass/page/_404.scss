@@ -1,0 +1,26 @@
+.erro-404 {
+  h1 {
+    @include type-primary(56, 65);
+    font-weight: bold;
+  }
+
+  .call-404 {
+    margin-top: 20px;
+
+    h2 {
+      @include type-primary(24, 30);
+      font-weight: bold;
+    }
+
+    .btn-404 {
+      width: auto;
+      margin: 20px 0;
+
+      &:hover {
+        color: $theme-color-primary;
+      }
+    }
+
+  }
+}
+

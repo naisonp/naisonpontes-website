@@ -1,0 +1,29 @@
+{
+  "name": "naison-pontes",
+  "version": "1.0.0",
+  "description": "Site de apresentação",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "gulp postinstall",
+    "build": "gulp postinstall; JEKYLL_ENV=production bundle exec jekyll build; gulp minify;",
+    "start": "bundle exec jekyll server"
+  },
+  "author": "Naison Pontes",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "event-stream": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify-es": "^2.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "easy-pie-chart": "^2.1.7"
+  }
+}

@@ -1,0 +1,42 @@
+// Grid columns
+$grid-columns: 12 !default;
+$grid-gutter-width: 20px !default;
+
+// width container device
+$container-device-base: 1200px;
+$container-device-tablet: 760px;
+$container-device-mobile: 480px;
+
+// colors 
+$yellow: #ffcc80;
+$light-grey: #74777b;
+$white: #fff;
+$grey: #2f3238;
+$green: #4db6ac;
+$light-green: #b2dfdb;
+$red: #ea4335;
+$black: #333;
+
+$linkedin: #206699;
+$twitter: #39a9e0;
+$github: #181616;
+$skype: #3caff0;
+
+// theme color
+$theme-color-primary: $yellow;
+$theme-color-secondary: $grey;
+$theme-color-third: $light-grey;
+$theme-color-fourth: $white;
+
+// fonts
+$font-family-serif: "Roboto", Arial, Helvetica, sans-serif !default;
+$font-family-monospace: 'PT Mono', monospace !default;
+$font-family-default: $font-family-serif !default;
+
+$font-size-base: 14px;
+$font-size-sm: 18px;
+$font-size-md: 24px;
+$font-size-lg: 36px;
+$font-size-xl: 48px;
+
+// trasition

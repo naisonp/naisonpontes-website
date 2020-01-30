@@ -1,0 +1,19 @@
+//Variables
+@import 'variables';
+
+//Functions
+@import 'functions';
+ 
+//Mixins
+@import 'mixins';
+
+
+@import 'reset';
+@import 'grid';
+
+@import 'page/geral'; 
+@import 'page/home';
+@import 'page/about';
+@import 'page/project';
+@import 'page/contact';
+@import 'page/404';

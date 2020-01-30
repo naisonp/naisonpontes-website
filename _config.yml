@@ -1,0 +1,30 @@
+title:         Naison Pontes
+description:   "Site oficial de Naison Pontes, criado com jekyll, html e css."
+baseurl:       ""
+url:           ""
+
+destination: public
+
+markdown:      kramdown
+
+sass:
+  load_paths:
+  - _sass
+  - node_modules
+  - vendor/node_modules
+  style: compressed
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - temp
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - package-lock.json
+  - package.json
+  - README.md
+  - gulpfile.js

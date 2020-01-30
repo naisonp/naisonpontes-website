@@ -1,0 +1,17 @@
+// generate grid 
+@function grid($grid-column, $offset: false) {
+	$column-width: $grid-column / $grid-columns * 100 + '%';
+	$result: calc(#{$column-width} - #{$grid-gutter-width});
+
+	@if $offset==offset {
+		$gutter-width: $grid-gutter-width / 2;
+		$result: calc(#{$column-width} + #{$gutter-width});
+	}
+
+	@return $result;
+}
+
+// convert px in em 
+@function em($pixel, $context: 16) {
+	@return $pixel / $context+em;
+}
