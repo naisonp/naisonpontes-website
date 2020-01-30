@@ -1,0 +1,1 @@
+"use strict";document.querySelector("#toggleSidebar").addEventListener("click",(function(){document.querySelector(".sidebar-wrapper").classList.toggle("close")}));
