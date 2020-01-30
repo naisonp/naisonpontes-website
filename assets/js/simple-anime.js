@@ -1,1 +1,19 @@
-"use strict";function _classCallCheck(i,e){if(!(i instanceof e))throw new TypeError("Cannot call a class as a function")}function _defineProperties(i,e){for(var t=0;t<e.length;t++){var n=e[t];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(i,n.key,n)}}function _createClass(i,e,t){return e&&_defineProperties(i.prototype,e),t&&_defineProperties(i,t),i}window.SimpleAnime=function(){function i(){_classCallCheck(this,i),this.items=document.querySelectorAll("[data-anime]"),this.init()}return _createClass(i,[{key:"animateItems",value:function(){this.items.forEach((function(i){var e=Number(i.getAttribute("data-anime"));isNaN(e)||setTimeout((function(){i.classList.add("anime")}),e)}))}},{key:"handleVisibility",value:function(){void 0!==document.visibilityState?"visible"===document.visibilityState&&this.animateItems():this.animateItems()}},{key:"init",value:function(){this.handleVisibility=this.handleVisibility.bind(this),this.handleVisibility(),document.addEventListener("visibilitychange",this.handleVisibility)}}]),i}();
+window.SimpleAnime = class {
+  constructor() {
+      this.items = document.querySelectorAll("[data-anime]"), this.init()
+  }
+  animateItems() {
+      this.items.forEach(t => {
+          const e = Number(t.getAttribute("data-anime"));
+          isNaN(e) || setTimeout(() => {
+              t.classList.add("anime")
+          }, e)
+      })
+  }
+  handleVisibility() {
+      void 0 !== document.visibilityState ? "visible" === document.visibilityState && this.animateItems() : this.animateItems()
+  }
+  init() {
+      this.handleVisibility = this.handleVisibility.bind(this), this.handleVisibility(), document.addEventListener("visibilitychange", this.handleVisibility)
+  }
+}
