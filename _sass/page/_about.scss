@@ -29,7 +29,7 @@
     border-top-right-radius: 2px;
     position: relative;
     padding: 0 30px;
-    margin-left: 215px;
+    margin-left: 247px;
 
     @include device(mobile) {
       margin-left: 0;
@@ -114,7 +114,7 @@
 
     .job-meta {
       position: absolute;
-      left: -240px;
+      left: -280px;
       top: 0;
 
       @include device(mobile) {
@@ -125,7 +125,7 @@
       .title {
         @include type-primary(18);
         color: $theme-color-primary;
-        max-width: 220px;
+        max-width: 230px;
         font-weight: 500;
         @include device(mobile){
           max-width: none;
@@ -140,6 +140,12 @@
 
     .job-desc {
       color: #666;
+
+      ul {
+        list-style: initial;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
     }
   }
 
@@ -193,7 +199,10 @@
       text-align: center;
       font-size: 20px;
       font-weight: 300;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+      @include device(mobile){
+        margin-top: 10px;
+      }
 
       span {
         line-height: 110px;

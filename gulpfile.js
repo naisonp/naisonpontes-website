@@ -8,6 +8,7 @@ const clean = require('gulp-clean');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify-es').default;
 const htmlmin = require('gulp-htmlmin');
+const path = require('path')
 
 gulp.task('minify-html', function () {
   return gulp
@@ -19,13 +20,13 @@ gulp.task('minify-html', function () {
 
 gulp.task('minify-js', function () {
   return gulp
-    .src('./public/assets/js/*.js')
+    .src(path.resolve(__dirname, 'public', 'assets', 'js', '*.js'))
     .pipe(babel({
       presets: ['@babel/env']
     }))
     .pipe(debug({ title: "--- minify file JavaScript" }))
     .pipe(uglify())
-    .pipe(gulp.dest('./public/assets/js'))
+    .pipe(gulp.dest(path.resolve(__dirname, 'public', 'assets', 'js')))
 });
 
 gulp.task('fontawesome', async () => {
@@ -47,13 +48,13 @@ gulp.task('easypiechart', async () => {
     .pipe(gulp.dest('./assets/vendor/easy-pie-chart/js'))
 });
 
-gulp.task('clean', async () => {
-  return gulp
-    .src(['./assets/vendor/font-awesome/*', './assets/vendor/easy-pie-chart/*'], { read: false })
-    .pipe(debug({ title: "--- cleaning vendor directorys" }))
-    .pipe(clean());
-});
+// gulp.task('clean', async () => {
+//   return gulp
+//     .src(['./assets/vendor/font-awesome/*', './assets/vendor/easy-pie-chart/*'], { read: false })
+//     .pipe(debug({ title: "--- cleaning vendor directorys" }))
+//     .pipe(clean());
+// });
 
 gulp.task('minify', gulp.series(['minify-html', 'minify-js']));
-gulp.task('postinstall', gulp.series('clean', ['fontawesome', 'easypiechart']));
+gulp.task('postinstall', gulp.series(['fontawesome', 'easypiechart']));
 gulp.task('default', gulp.series('postinstall', gulp.parallel(['minify'])));
