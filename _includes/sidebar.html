@@ -15,7 +15,7 @@
         <ul>
           {% for item in site.data.navigation %}
             <li {% if page.url == item.link %}class="active" {% endif %}>
-              <a href="{{ item.link | prepend: site.baseurl | prepend: site.url }}" {% if page.url != item.link %}class="{{ item.class }}" {% endif %}><i
+              <a href="{{ item.link | prepend: site.baseurl }}" {% if page.url != item.link %}class="{{ item.class }}" {% endif %}><i
                   class="{{ item.icon }}"></i><span>{{ item.name }}</span></a>
             </li>
           {% endfor %}

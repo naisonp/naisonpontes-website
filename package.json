@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Site de apresentação",
   "main": "index.js",
-  "homepage": "https://naisonp.github.io/naisonpontes-website/",
+  "homepage": "https://naisonp.github.io/",
   "scripts": {
     "postinstall": "gulp postinstall",
     "build": "gulp postinstall; JEKYLL_ENV=production bundle exec jekyll build; gulp minify;",
